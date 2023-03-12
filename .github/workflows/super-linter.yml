@@ -13,9 +13,9 @@ jobs:
     steps:
       # Check out a copy of your repository on the ubuntu-latest machine      
       uses: actions/checkout@v3
-      name: Checkout code 
+      # name: Checkout code 
       # Runs the Super-Linter action
-      name: Run Super-Linter
+      Run Super-Linter
       uses: github/super-linter@v4
       env:
         VALIDATE_ALL_CODEBASE: true
