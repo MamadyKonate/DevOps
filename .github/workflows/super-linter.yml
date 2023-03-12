@@ -11,11 +11,11 @@ jobs:
     name: Lint code base
     runs-on: ubuntu-latest
     steps:
-      # Check out a copy of your repository on the ubuntu-latest machine      
+      # Check out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
       uses: actions/checkout@v3
-      # name: Checkout code 
       # Runs the Super-Linter action
-      Run Super-Linter
+      - name: Run Super-Linter
       uses: github/super-linter@v4
       env:
         VALIDATE_ALL_CODEBASE: true
