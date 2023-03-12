@@ -3,8 +3,7 @@ name: Super-Linter
 # Run this workflow every time a new commit pushed to your repository
 on: [push, workflow_dispatch]
 jobs:
- # Set the job key. The key is displayed as the job name
- # when a job name is not provided
+ # Set the job key. The key is displayed as the job name when a job name is not provided
  super-lint:
  # Name the Job
  name: Lint code base
