@@ -17,6 +17,7 @@ namespace GitHubActionsTest
             Console.WriteLine("Please enter your age");
             p.Age = int.Parse( Console.ReadLine());
             Console.WriteLine("Hello {0}, you are {1} years old", p.Name, p.Age);
+            Console.WriteLine("No more entry needed - Press any key to exit");
             Console.ReadLine();
         }
     }
