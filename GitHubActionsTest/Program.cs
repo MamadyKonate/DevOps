@@ -11,7 +11,7 @@ namespace GitHubActionsTest
         /// <param name="args">Argument to be passed in</param>
         static void Main(string[] args)
         {
-            Person p = new Person();            
+            Person p = new Person();
             Console.WriteLine("Please enter your name");
             p.Name = Console.ReadLine();
             Console.WriteLine("Please enter your age");
