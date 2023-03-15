@@ -1,5 +1,4 @@
 ﻿using GitHubActionsTest.Models;
-using System;
 
 namespace GitHubActionsTest
 {
