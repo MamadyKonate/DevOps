@@ -6,3 +6,11 @@ D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GitHubActions\GitH
 D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GitHubActions\GitHubActionsTest\obj\Debug\GitHubActionsTest.csproj.CoreCompileInputs.cache
 D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GitHubActions\GitHubActionsTest\obj\Debug\GitHubActionsTest.exe
 D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GitHubActions\GitHubActionsTest\obj\Debug\GitHubActionsTest.pdb
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\bin\Debug\GitHubActionsTest.exe.config
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\bin\Debug\GitHubActionsTest.exe
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\bin\Debug\GitHubActionsTest.pdb
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\obj\Debug\GitHubActionsTest.csproj.AssemblyReference.cache
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\obj\Debug\GitHubActionsTest.csproj.SuggestedBindingRedirects.cache
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\obj\Debug\GitHubActionsTest.csproj.CoreCompileInputs.cache
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\obj\Debug\GitHubActionsTest.exe
+D:\College\OneDrive - Atlantic TU\College\Course Works\DevOps\GetHubActions2\GitHubActionsTest\obj\Debug\GitHubActionsTest.pdb
