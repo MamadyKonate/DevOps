@@ -25,6 +25,13 @@ jobs:
        echo Do we have Java on this machine
        java -version
        echo  
+       echo Does it have Git installed?
+       git --version
+       echo
+       echo Checking if some build tool exist
+       mvn --version
+       gradle --version
+       ant -version
        
   Build:
     runs-on: ubuntu-latest
