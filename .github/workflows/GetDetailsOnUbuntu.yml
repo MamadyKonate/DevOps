@@ -20,11 +20,13 @@ jobs:
     steps:  
     - uses: actions/checkout@v3   
     - name: calling GHActionsCommandsScripts
-      run: ./GHActionsCommandsScripts.sh
+      run: sh ./GHActionsCommandsScripts.sh
     
     - name: running multi-line commands
       run: |
        echo Multi-ling sample
        echo All of the codes have been moved to GHActionsCommandsScripts.sh file in the root directory
-      
+       echo 
+       echo now displaying the content of the folder.      
+       ls -a
     # Listing the detail is succefully completed
