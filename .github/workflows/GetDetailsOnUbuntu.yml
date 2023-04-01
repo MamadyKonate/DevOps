@@ -22,8 +22,8 @@ jobs:
     - name: calling GHActionsCommandsScripts
       run: ./GHActionsCommandsScripts.sh
     
-    -name: running multi-line commands
-     run: |
+    - name: running multi-line commands
+      run: |
        echo Multi-ling sample
        echo All of the codes have been moved to GHActionsCommandsScripts.sh file in the root directory
       
