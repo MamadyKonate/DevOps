@@ -13,13 +13,15 @@ on:
 
 jobs:
   # Any job to run is defined here
-
+  
   GetInfo:
+    
     runs-on: ubuntu-latest
-    steps:     
+    steps:  
+    - uses: actions/checkout@v3   
     - run: |
        echo Who am I currently logged in as
-       echo whoami
+       whoami
        echo       
        echo Showing the content of this directory on ubuntu machine
        ls -a
