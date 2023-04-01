@@ -22,42 +22,42 @@ jobs:
     - uses: actions/checkout@v3
     - name: running multi-line commands
       run: | 
-       echo "Multi-line sample"
-       echo "-"
+       echo Multi-line sample
+       echo 
        echo Who am I currently logged in as
-       whoami
-       echo       
+       whoami 
+       echo .      
        echo Showing the content of this directory on windows machine
-       ls -a
+       ls -a 
        echo # gaining an extra line
        echo Do we have Java on this machine
-       java -version
-       echo
+       java -version 
+       echo 
        echo Does it have Git installed?
-       git --version
-       echo
+       git --version 
+       echo 
        echo Checking if some build tool exist
-       echo
+       echo 
        echo Does it have mvn
-       mvn --version
-       echo
+       mvn --version 
+       echo 
        echo Does it have Gradle
-       gradle --version
-       echo
+       gradle --version 
+       echo 
        echo Does it have ant
-       ant -version
-       echo
+       ant -version 
+       echo 
        echo Does it have Android SDK - if so where?
-       echo $ANDROID_SDK_ROOT
-       echo
+       echo $ANDROID_SDK_ROOT 
+       echo 
        echo Show the current workspace
-       echo RUNNER_WORKSPACE
-       echo
+       echo RUNNER_WORKSPACE 
+       echo 
        echo Show directory structure
-       df
-       echo       
+       df 
+       echo 
        echo What environments are available
-       env
+       env 
   
   # running on ubuntu
   GetInfoOnUbuntu: # job #2
@@ -65,47 +65,43 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3 
-    
+    - uses: actions/checkout@v3
     - name: running multi-line commands
-      run: |
-       echo Multi-ling sample
-       echo        
+      run: | 
+       echo Multi-line sample
+       echo 
        echo Who am I currently logged in as
-       whoami
-       echo       
-       echo Showing the content of this directory on windows machine
-       ls -a
+       whoami 
+       echo .      
+       echo Showing the content of this directory on ubuntu machine
+       ls -a 
        echo # gaining an extra line
        echo Do we have Java on this machine
-       java -version
-       echo  
+       java -version 
+       echo 
        echo Does it have Git installed?
-       git --version
-       echo
+       git --version 
+       echo 
        echo Checking if some build tool exist
-       echo
+       echo 
        echo Does it have mvn
-       mvn --version
-       echo
+       mvn --version 
+       echo 
        echo Does it have Gradle
-       gradle --version
-       echo
+       gradle --version 
+       echo 
        echo Does it have ant
-       ant -version
-       echo
+       ant -version 
+       echo 
        echo Does it have Android SDK - if so where?
-       echo $ANDROID_SDK_ROOT
-       echo
+       echo $ANDROID_SDK_ROOT 
+       echo 
        echo Show the current workspace
-       echo RUNNER_WORKSPACE       
-       echo
+       echo RUNNER_WORKSPACE 
+       echo 
        echo Show directory structure
-       df       
-       echo
-       echo Windows specific code Get-ExecutionPolicy omitted
-       ## Get-ExecutionPolicy
-       echo
+       df 
+       echo 
        echo What environments are available
-       env
+       env 
   
