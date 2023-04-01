@@ -14,19 +14,23 @@ on:
 
 jobs:
   # Define a build job
+
+  PreBuild:
+    runs-on: ubuntu-latest
+    steps:     
+    - run: |
+       echo Showing the content of this directory on ubuntu machine
+       ls -a
+       echo # gaining an extra line
+       echo Do we have Java on this machine
+       java -version
+       echo  
+       
   Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3     
-      
-      - name: Running a multi-line scripts
-      - run: |
-         echo Showing the content of this directory on ubuntu machine
-         ls -a
-         echo # gaining an extra line
-         echo Do we have Java on this machine
-         java -version
-         echo
+
        
       
       - name: Code_scanning
