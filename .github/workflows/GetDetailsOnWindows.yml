@@ -15,18 +15,15 @@ jobs:
   # Any job to run is defined here
   
   GetInfoOnWindows: # job #1
-    
+  
     runs-on: windows-latest
     
-    steps:  
-    - uses: actions/checkout@v3   
-    - name: running
-      run: sh ./GHActionsCommandsScripts.sh
-    
+    steps:
+    - uses: actions/checkout@v3
     - name: running multi-line commands
       run: |
        echo Multi-ling sample
-       echo        
+       echo
        echo Who am I currently logged in as
        whoami
        echo       
@@ -35,7 +32,7 @@ jobs:
        echo # gaining an extra line
        echo Do we have Java on this machine
        java -version
-       echo  
+       echo
        echo Does it have Git installed?
        git --version
        echo
@@ -54,14 +51,11 @@ jobs:
        echo $ANDROID_SDK_ROOT
        echo
        echo Show the current workspace
-       echo RUNNER_WORKSPACE       
+       echo RUNNER_WORKSPACE
        echo
        echo Show directory structure
-       df       
-       echo
-       echo Windows specific code Get-ExecutionPolicy
-       Get-ExecutionPolicy
-       echo
+       df
+       echo       
        echo What environments are available
        env
   
@@ -70,10 +64,8 @@ jobs:
     
     runs-on: ubuntu-latest
     
-    steps:  
-    - uses: actions/checkout@v3   
-    - name: running
-      run: sh ./GHActionsCommandsScripts.sh
+    steps:
+    - uses: actions/checkout@v3 
     
     - name: running multi-line commands
       run: |
