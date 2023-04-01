@@ -51,5 +51,7 @@ jobs:
        echo
        echo Show directory structure
        df       
-      
+       echo
+       echo What environments are available
+       env
     # Listing the detail is succefully completed
