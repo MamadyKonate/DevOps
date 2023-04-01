@@ -13,25 +13,7 @@ on:
 # Define some jobs that should run
 
 jobs:
-  # Define a build job
-
-  PreBuild:
-    runs-on: ubuntu-latest
-    steps:     
-    - run: |
-       echo Showing the content of this directory on ubuntu machine
-       ls -a
-       echo # gaining an extra line
-       echo Do we have Java on this machine
-       java -version
-       echo  
-       echo Does it have Git installed?
-       git --version
-       echo
-       echo Checking if some build tool exist
-       mvn --version
-       gradle --version
-       ant -version
+  # Define a build job  
        
   Build:
     runs-on: ubuntu-latest
