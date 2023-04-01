@@ -28,7 +28,7 @@ jobs:
        whoami 
        echo " "      
        echo "Showing the content of this directory on windows machine"
-       ls -a 
+       ls 
        echo " "
        echo "Do we have Java on this machine"
        java -version 
@@ -74,7 +74,7 @@ jobs:
        whoami 
        echo " "     
        echo Showing the content of this directory on ubuntu machine
-       ls -a 
+       ls  
        echo " "
        echo Do we have Java on this machine
        java -version 
