@@ -21,9 +21,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: running multi-line commands
-      run: |
-       echo Multi-ling sample
-       echo
+      run: | 
+       echo "Multi-line sample"
+       echo "-"
        echo Who am I currently logged in as
        whoami
        echo       
