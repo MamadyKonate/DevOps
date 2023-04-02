@@ -11,6 +11,8 @@ namespace GitHubActionsTest
         /// <param name="args">Argument to be passed in</param>
         static void Main(string[] args)
         {
+            //After applying Branch Protection Rules.
+            
             Person p = new Person();
             Console.WriteLine("Please enter your name");
             p.Name = Console.ReadLine();
