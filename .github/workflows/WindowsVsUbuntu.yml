@@ -1,0 +1,107 @@
+# This workflow demonstrates how you can use various commands to get some helpful insight on the windows container.
+
+name: Details on windows-latest
+
+# Define when the workflow should run. On a push to main or manually with worfkow_dispatch
+on: 
+  push:
+    branches: [ main ] 
+  
+  workflow_dispatch:
+
+# Defining a single job to run
+
+jobs:
+  # Any job to run is defined here
+  
+  GetInfoOnWindows: # job #1
+  
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: running multi-line commands
+      run: | 
+       echo "Multi-line sample"
+       echo " "
+       echo "Who am I currently logged in as"
+       whoami 
+       echo " "      
+       echo "Showing the content of this directory on windows machine"
+       ls 
+       echo " "
+       echo "Do we have Java on this machine"
+       java -version 
+       echo " "
+       echo "Does it have Git installed?"
+       git --version 
+       echo " "
+       echo "Checking if some build tool exist"
+       echo " "
+       echo "Does it have mvn"
+       mvn --version 
+       echo " "
+       echo "Does it have Gradle"
+       gradle --version 
+       echo " "
+       echo Does it have ant
+       ant -version 
+       echo " "
+       echo "Does it have Android SDK - if so where?"
+       echo $ANDROID_SDK_ROOT 
+       echo " "
+       echo "Show the current workspace"
+       echo RUNNER_WORKSPACE 
+       echo " "
+       echo "Show directory structure"
+       df 
+       echo " "
+       echo "What environments are available"
+       env 
+  
+  # running on ubuntu
+  GetInfoOnUbuntu: # job #2
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: running multi-line commands
+      run: | 
+       echo Multi-line sample
+       echo " "
+       echo Who am I currently logged in as
+       whoami 
+       echo " "     
+       echo Showing the content of this directory on ubuntu machine
+       ls  
+       echo " "
+       echo Do we have Java on this machine
+       java -version 
+       echo " "
+       echo Does it have Git installed?
+       git --version 
+       echo " "
+       echo Checking if some build tool exist
+       echo " "
+       echo Does it have mvn
+       mvn --version 
+       echo " "
+       echo Does it have Gradle
+       gradle --version 
+       echo " "
+       echo Does it have ant
+       ant -version 
+       echo " "
+       echo Does it have Android SDK - if so where?
+       echo $ANDROID_SDK_ROOT 
+       echo " "
+       echo Show the current workspace
+       echo RUNNER_WORKSPACE 
+       echo " "
+       echo Show directory structure
+       df 
+       echo " "
+       echo What environments are available
+       env 
+  

@@ -1,0 +1,32 @@
+# This workflow demonstrates how you can use various commands to get some helpful insight on the ubuntu container.
+
+name: Details on ubuntu-lates
+
+# Define when the workflow should run. On a push to main, a PR to main or manually with worfkow_dispatch
+on: 
+  push:
+    branches: [ main ] 
+  
+  workflow_dispatch:
+
+# Defining a single job to run
+
+jobs:
+  # Any job to run is defined here
+  
+  GetInfo:
+    
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v3   
+    - name: calling GHActionsCommandsScripts
+      run: sh ./GHActionsCommandsScripts.sh
+    
+    - name: running multi-line commands
+      run: |
+       echo Multi-ling sample
+       echo All of the codes have been moved to GHActionsCommandsScripts.sh file in the root directory
+       echo 
+       echo now displaying the content of the folder.      
+       ls -a
+    # Listing the detail is succefully completed
